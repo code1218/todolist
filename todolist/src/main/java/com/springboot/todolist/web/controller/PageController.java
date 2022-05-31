@@ -10,4 +10,9 @@ public class PageController {
 	public String index() {
 		return "todolist/todolist";
 	}
+	
+	@GetMapping("/auth/signup")
+	public String signup() {
+		return "auth/signup";
+	}
 }
