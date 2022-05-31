@@ -58,20 +58,9 @@ async function usernameCheck(username) {
 	return responseData;
 }
 
-
-/*async function request(url) {
-	const response = await fetch(url);
-	if(response.ok){
-		return response.json();
-	}else{
-		throw new Error("response Error: " + response);
-	}
-}*/
-
 async function request(url, option) {
-	console.log(url);
-	console.log(option);
 	const response = await fetch(url, option);
+	
 	if(response.ok){
 		return response.json();
 	}else{
