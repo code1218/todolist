@@ -13,11 +13,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@RequiredArgsConstructor
 public class SignupReqDto {
-	
-	private final BCryptPasswordEncoder passwordEncoder;
 	
 	@NotBlank
 	private String username;
@@ -32,7 +28,7 @@ public class SignupReqDto {
 	public User toEntity() {
 		return User.builder()
 				.username(username)
-				.password(passwordEncoder.encode(password))
+				.password(new BCryptPasswordEncoder().encode(password))
 				.name(name)
 				.email(email)
 				.build();

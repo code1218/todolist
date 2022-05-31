@@ -15,4 +15,9 @@ public class PageController {
 	public String signup() {
 		return "auth/signup";
 	}
+	
+	@GetMapping("/auth/signin")
+	public String signin() {
+		return "auth/signin";
+	}
 }

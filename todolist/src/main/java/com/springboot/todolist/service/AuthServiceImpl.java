@@ -14,6 +14,11 @@ public class AuthServiceImpl implements AuthService {
 	private final UserRepository userRepository;
 	
 	@Override
+	public boolean checkUsername(String username) throws Exception {
+		return userRepository.findUserByUsername(username) == null;
+	}
+	
+	@Override
 	public boolean signup(SignupReqDto signupReqDto) throws Exception {
 		return userRepository.save(signupReqDto.toEntity()) > 0;
 	}
