@@ -1,4 +1,4 @@
-package handler.exception;
+package com.springboot.todolist.handler.exception;
 
 import java.util.Map;
 

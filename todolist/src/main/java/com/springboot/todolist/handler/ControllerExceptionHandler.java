@@ -1,4 +1,4 @@
-package handler;
+package com.springboot.todolist.handler;
 
 import java.util.Map;
 
@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import com.springboot.todolist.handler.exception.CustomValidationApiException;
 import com.springboot.todolist.web.dto.CMRespDto;
-
-import handler.exception.CustomValidationApiException;
 
 @RestController
 @RestControllerAdvice

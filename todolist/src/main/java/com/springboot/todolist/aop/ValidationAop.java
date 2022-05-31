@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
 
-import handler.exception.CustomValidationApiException;
+import com.springboot.todolist.handler.exception.CustomValidationApiException;
 
 @Aspect
 @Component
