@@ -20,4 +20,9 @@ public class PageController {
 	public String signin() {
 		return "auth/signin";
 	}
+	
+	@GetMapping("/test")
+	public String test() {
+		return "thymeleaf/exampleLayout";
+	}
 }

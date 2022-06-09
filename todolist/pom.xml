@@ -10,9 +10,10 @@
 	</parent>
 	<groupId>com.springboot</groupId>
 	<artifactId>todolist</artifactId>
-	<version>1.0.0</version>
+	<version>1.0</version>
 	<name>todolist</name>
 	<description>ToDoList</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
